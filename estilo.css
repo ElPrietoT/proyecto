@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('font/helveticaneue-ultralight.eot');
+    src: url('font/helveticaneue-ultralight.eot?#iefix') format('embedded-opentype'),
+         url('font/helveticaneue-ultralight.woff') format('woff'),
+         url('font/helveticaneue-ultralight.ttf') format('truetype'),
+         url('font/helveticaneue-ultralight.svg#helvetica_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+  /*  background: url(img/fondo.jpg) no-repeat center center fixed; */
+  background-color: #ff931f;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header img#logo{
+    top: 0;
+    margin-left: 1.5em;
+    position: fixed;
+    width: 200px;
+    border-radius: 0 0 .5em .5em;
+    z-index: -100;
+}
+header p{
+    color: #555555;
+    font-family: helvetica_neueregular;
+    font-size: 72px;
+    font-weight: bolder;
+    margin-top: 1em;
+    text-align: center;
+
+}
+section{
+    margin-top: 10em;
+     z-index: 10000;
+}
+div#fondoform{
+    display: block;
+    background: rgba(255, 255, 255, .5);
+    width: 25em;
+    margin: 0 auto;
+    padding: 1.5em;
+    border-radius: .5em;
+
+}
+
+form h2 {
+    border-radius: 5px;
+    color: #5CD053;
+    display: block;
+    font-family: helvetica_neueregular;
+    font-size: 20px;
+    padding: 5px;
+    text-shadow: 1px 1px 1px #CCCCCC;
+    width: 433px;
+}
+form ul {
+    width:25em;
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+form li{
+    padding:12px;
+    position:relative;
+}
+form label {
+    color: #000;
+    display: inline-block;
+    float: left;
+    font-family: helvetica_neueregular;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3px;
+    padding: 3px;
+    width: 90px;
+}
+form input {
+    height:20px;
+    width:17em;
+    padding:5px 8px;
+}
+form input, form select{
+    margin: 0 10px;
+}
+form button img{
+    position: absolute;
+    top:1.2em;
+
+}
+/*----- estilos visuales de los elementos --------*/
+form input, form textarea {
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:.5em;
+    color: #888;
+    font-size: 12px;
+
+}
+form input:focus, form textarea:focus {
+    background: #fff;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+    border-radius:.5em;
+}
+
+form input:required:valid, form textarea:required:valid {
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+    border-radius:.5em;
+}
+form input:focus:invalid, form textarea:focus:invalid {
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+    border-radius:.5em;
+}
+
+/* === Estilos del boton de Envio ===
+button {
+    padding: 9px 17px;
+   font-family: helvetica_neueregular, Arial, sans-serif;
+   font-weight: bold;
+   line-height: 1;
+   color: #444;
+   border: none;
+   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+   background-image: -moz-linear-gradient(0% 100% 90deg, #BBBBBB, #FFFFFF);
+   background-color: #fff;
+   border: 1px solid #f1f1f1;
+   border-radius: 10px;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+button:hover {
+    opacity:.55;
+    cursor: pointer;
+    color: #fff;
+}
+button:active {
+    border: 1px solid #222;
+    box-shadow: 0 0 10px 5px #444 inset;
+}*/
+button{
+    background: none;
+    border: none;
+}
+section#program{
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+section#program ul{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+section#program a{
+    text-decoration: none;
+}
+section#program ul li {
+    display: inline-block;
+    max-width: 80%;
+    margin-right: 10em;
+}
+
+html, body { width: 100%;}
+
+section#program {  text-align: center;
+font-size: 0.7em;
+width: 90%;
+margin: 20px auto;
+position: relative;
+}
+section#program ul { list-style-type: none;}
+
+section#program ul li.nivel1 { float: left;
+width: 90%;
+margin-right: 2px;
+position: relative;
+}
+section#program ul li { float: left;}
+
+section#program ul li a, section#program ul li span {display: block;
+text-decoration: none;
+color: #fff;
+background-color: #399;
+border: solid 1px #fff;
+padding: 8px;
+position: relative;
+width: 30em;
+}
+a:active {position: relative;
+}
+section#program ul li a:active {background-color: #6CC;
+color: #000;
+border-bottom: solid 1px #6CC;
+position: relative;
+}
+section#program ul li span.nivel1 {display: block;
+}
+section#program ul li:hover span.nivel1 {cursor: pointer;
+}
+
+footer p{
+    color: #000;
+    font-family: helvetica_neueregular;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 9em;
+    text-align: center;
+}
+
+select{
+    width: 220px;
+    background: #fff;
+    color: #000;
+    height: 2.5em;
+    font-family: helvetica_neueregular;
+    font-size: 13px;
+    font-weight: bold;
+}
+option{
+    width: 130px;
+    background: #fff;
+    height: 2em;
+    font-family: helvetica_neueregular;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
